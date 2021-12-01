@@ -13,7 +13,7 @@ source:
     - fix-setup-py.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -30,10 +30,14 @@ requirements:
     - scipy
 
 test:
+  source_files:
+    - tests
   imports:
     - lava.lib.dnf.kernels.kernels
     - lava.lib.dnf.connect.connect
     - lava.lib.dnf.operations.operations
+  commands:
+    - python -m unittest
 
 about:
   home: https://github.com/lava-nc/lava-dnf
