@@ -35,6 +35,8 @@ test:
     - pytest
     - nbformat
     - nbconvert
+    - nb_conda_kernels
+    - ipykernel
   source_files:
     - tests
     - tutorials
@@ -43,6 +45,7 @@ test:
     - lava.lib.dnf.connect.connect
     - lava.lib.dnf.operations.operations
   commands:
+    - python -m ipykernel install --name python3
     - python -m unittest
 
 about:
