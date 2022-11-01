@@ -1,0 +1,12 @@
+diff --git a/tests/lava/tutorials/test_tutorials.py b/tests/lava/tutorials/test_tutorials.py
+index 4762fae..02fc1da 100644
+--- a/tests/lava/tutorials/test_tutorials.py
++++ b/tests/lava/tutorials/test_tutorials.py
+@@ -17,7 +17,6 @@
+ import nbformat
+ 
+ import lava.lib.dnf
+-import tutorials.lava.lib.dnf
+ 
+ 
+ class TestTutorials(unittest.TestCase):
