@@ -25,6 +25,7 @@ requirements:
     - numpy
     - lava
     - scipy
+    - asteval
 
 test:
   source_files:
