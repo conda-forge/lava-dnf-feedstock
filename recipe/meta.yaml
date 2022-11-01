@@ -36,6 +36,7 @@ test:
     - nbformat
   source_files:
     - tests
+    - tutorials
   imports:
     - lava.lib.dnf.kernels.kernels
     - lava.lib.dnf.connect.connect
