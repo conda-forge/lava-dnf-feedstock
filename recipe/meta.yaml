@@ -37,6 +37,7 @@ test:
     - nbconvert
     - nb_conda_kernels
     - ipykernel
+    - jupyter
   source_files:
     - tests
     - tutorials
