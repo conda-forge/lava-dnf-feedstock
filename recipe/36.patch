@@ -1,0 +1,24 @@
+diff --git a/tests/lava/tutorials/test_tutorials.py b/tests/lava/tutorials/test_tutorials.py
+index 4762fae..9b26363 100644
+--- a/tests/lava/tutorials/test_tutorials.py
++++ b/tests/lava/tutorials/test_tutorials.py
+@@ -17,7 +17,6 @@
+ import nbformat
+ 
+ import lava.lib.dnf
+-import tutorials.lava.lib.dnf
+ 
+ 
+ class TestTutorials(unittest.TestCase):
+@@ -144,9 +143,8 @@ def _run_notebook(self, notebook: str,
+             end to end tutorial, by default False
+         """
+         cwd = os.getcwd()
+-        tutorials_temp_directory = \
+-            tutorials.__path__.__dict__["_path"][0]
+-        tutorials_directory = ""
++        cur_file_dir = os.path.dirname(os.path.abspath(__file__))
++        tutorials_temp_directory = os.path.join(cur_file_dir, "../../../tutorials")
+ 
+         if dnf_101:
+             tutorials_temp_directory = \
