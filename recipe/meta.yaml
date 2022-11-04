@@ -1,5 +1,5 @@
 {% set name = "lava-dnf" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/lava-nc/lava-dnf/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 4a68148ea13129aedede15ce3175da153517a0eb5bd18e963a1f8894e3cf3c51
+  sha256: 4895eba8fd03651bc6b057bd95c3eb69ac0b6f139a29e80f1c7e84f059bf0a9c
   patches:
     - 36.patch
 
