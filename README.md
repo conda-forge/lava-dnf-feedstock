@@ -1,11 +1,11 @@
-About lava-dnf
-==============
+About lava-dnf-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lava-dnf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lava-nc/lava-dnf
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lava-dnf-feedstock/blob/main/LICENSE.txt)
 
 Summary: lava-dnf is a library within the Lava software framework. lava-dnf provides processes and other software infrastructure to build architectures composed of DNFs.
 
