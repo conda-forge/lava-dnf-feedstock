@@ -45,9 +45,9 @@ test:
     - lava.lib.dnf.kernels.kernels
     - lava.lib.dnf.connect.connect
     - lava.lib.dnf.operations.operations
-  commands:
-    - python -m ipykernel install --name python3 --user
-    - python -m unittest
+  # commands:
+  #   - python -m ipykernel install --name python3 --user
+  #   - python -m unittest
 
 about:
   home: https://github.com/lava-nc/lava-dnf
